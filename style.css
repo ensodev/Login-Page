@@ -1,0 +1,127 @@
+html{
+height: 100%;
+margin: 0 auto;
+padding: 0;
+font-family: sans-serif, Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+body{
+background-color: black;
+background-image: url(006.jpg) ;
+min-height: 100%;   /* hieght of the image */
+opacity: 0.01px;
+background-repeat: no-repeat;
+background-size: 1400px 700px;
+
+}
+
+.container{
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+   "login login login"
+   "form form form"
+   "footer footer footer";
+   
+}
+
+.login{
+   grid-area: login;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   font-size: 25px;
+   
+   
+}
+span{
+   color:red;
+   font-size:70px;
+}
+
+.form{
+   grid-area: form;
+   padding-top: 0px;
+
+  
+}
+a{
+   text-decoration: none;
+   color:white;
+   font-size: 12px;
+}
+
+a:hover{
+    color:red;
+}
+
+.footer{
+   grid-area: footer;
+}
+#footer{
+margin-top: 100px;
+text-decoration: none;
+font-size: 12px;
+color:gray;
+}
+
+#copyr{
+   color: white;
+}
+
+
+h1{
+   color: white;
+}
+/*#email{
+  padding-top: 10px;
+} */
+
+#email, #password{
+   border: 0px;
+   width: 250px;
+   height: 30px;
+   border-radius: 30px;
+   margin: 0px 3px;
+   text-align: center;
+   background-color: whitesmoke;
+}
+#button{
+ border: 0px;
+   width: 250px;
+   height: 30px;
+   border-radius: 30px;
+   background-color: whitesmoke;
+
+}
+
+
+#button:hover{
+   background-color: goldenrod;
+
+
+}
+
+ 
+ #email:hover{
+  
+   border-radius: 20px;
+   border:1px;
+   border-style: solid;
+   border-color:gold;
+
+}
+
+
+#password:hover{
+   border-radius: 20px;
+   border:1px;
+   border-style: solid;
+   border-color:gold;
+
+}
+
+#log{
+  font-size: 20px;
+ }
